@@ -1,9 +1,11 @@
+import 'package:clean_folder_project/core/router/route_names.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -14,12 +16,12 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, child) {
-        return MaterialApp(
+        return MaterialApp.router(
           debugShowCheckedModeBanner: false,
-          home: child,
+
+          routerConfig: AppRouter.router,
         );
       },
-      child: const HomeScreen(),
     );
   }
 }
