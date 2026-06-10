@@ -1,4 +1,7 @@
-import 'package:flutter_clean_arc_base/index.dart';
+
+
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class AppTitle extends StatelessWidget {
   final String title;
